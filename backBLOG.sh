@@ -5,7 +5,7 @@ set -e
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'backBLOG'
 
 # 如果你想要备份到 https://<USERNAME>.github.io分支
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git backBLOG
