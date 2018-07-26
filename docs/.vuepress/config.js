@@ -23,6 +23,13 @@ module.exports = {
             children: [ 
               'blogs/VuePress/',
             ]
+          },
+          {
+            title: 'JavaScript',
+            collapsable: false, 
+            children: [ 
+              'blogs/JavaScript/',
+            ]
           }
         ]
           
