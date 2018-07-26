@@ -15,7 +15,6 @@ fi
 
 
 #切换到分支
-git checkout backBLOG
 git add -A
 git commit -m 'backBLOG'
 
