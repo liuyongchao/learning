@@ -16,11 +16,11 @@ fi
 
 #切换到分支
 git add -A
-git commit -m 'backBLOG'
+git commit -m 'blogback'
 
 # 如果你想要备份到 https://<USERNAME>.github.io分支
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git backBLOG
-git push -f git@github.com:liuyongchao/liuyongchao.github.io.git backblog:backBLOG
+git push -f git@github.com:liuyongchao/liuyongchao.github.io.git master:blog
 # 如果你想要部署到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
