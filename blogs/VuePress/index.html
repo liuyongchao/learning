@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress + GitHub搭建个人博客</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.c89df8da.css" as="style"><link rel="preload" href="/assets/js/app.ef863600.js" as="script"><link rel="preload" href="/assets/js/5.48ed9441.js" as="script"><link rel="prefetch" href="/assets/js/2.c4f73cf0.js"><link rel="prefetch" href="/assets/js/3.836c562d.js"><link rel="prefetch" href="/assets/js/4.37fe6f3e.js"><link rel="prefetch" href="/assets/js/6.b52a2bd3.js"><link rel="prefetch" href="/assets/js/7.3c1da192.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c89df8da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>Webpack</span><!----></p><ul class="sidebar-group-items"><li><a href="/blogs/webpack/" class="sidebar-link">webpack介绍</a></li><li><a href="/blogs/webpack/webpack-install.html" class="sidebar-link">Webpack2.0应用</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>VuePress</span><!----></p><ul class="sidebar-group-items"><li><a href="/blogs/VuePress/" class="active sidebar-link">VuePress + GitHub搭建个人博客</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>JavaScript</span><!----></p><ul class="sidebar-group-items"><li><a href="/blogs/JavaScript/" class="sidebar-link">JavaScript</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="vuepress-github搭建个人博客"><a href="#vuepress-github搭建个人博客" aria-hidden="true" class="header-anchor">#</a> VuePress + GitHub搭建个人博客</h1><p>1.创建blog文件</p><div class="language-bash extra-class"><pre class="language-bash"><code>cnpm init -y
+</code></pre></div><p>2.安装vuepress</p><div class="language-bash extra-class"><pre class="language-bash"><code>cnpm i vuepress -D
+</code></pre></div><p>3.创建docs文件夹编写博客内容</p><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">mkdir</span> docs
+ <span class="token function">mkdir</span> docs <span class="token operator">&amp;&amp;</span> <span class="token keyword">echo</span> <span class="token string">'vuepress + github搭建个人博客'</span> <span class="token operator">&gt;</span> docs/README.md
+</code></pre></div><p>4.运行vuepress服务看是否成功</p><div class="language-bash extra-class"><pre class="language-bash"><code>vuepress dev docs
+</code></pre></div><p>5.构建</p><div class="language-bash extra-class"><pre class="language-bash"><code>vuepress build docs
+</code></pre></div><p>5.主页配置</p><ul><li>侧边栏配置</li></ul><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">cd</span> docs/.vuepress  <span class="token operator">&amp;&amp;</span> <span class="token function">vi</span> config.js
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    themeConfig: <span class="token punctuation">{</span>
+        nav: <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> text: <span class="token string">'Home'</span>, link: <span class="token string">'/'</span> <span class="token punctuation">}</span>,
+            <span class="token punctuation">{</span> text: <span class="token string">'Guide'</span>, link: <span class="token string">'/guide/'</span> <span class="token punctuation">}</span>,
+            <span class="token punctuation">{</span> text: <span class="token string">'VuePress'</span>, link: <span class="token string">'https://vuepress.vuejs.org/'</span> <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span>,
+        displayAllHeaders: true, // 默认值：false
+        activeHeaderLinks: false, // 默认值：true
+        sidebar: <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            title: <span class="token string">'Webpack'</span>,
+            collapsable: false,      
+            children: <span class="token punctuation">[</span>
+              <span class="token string">'/blogs/webpack/'</span>,
+              <span class="token string">'/blogs/webpack/webpack-install'</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>,
+          <span class="token punctuation">{</span>
+            title: <span class="token string">'VuePress'</span>,
+            collapsable: false, 
+            children: <span class="token punctuation">[</span> 
+              <span class="token string">'/blogs/VuePress/'</span>,
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>       
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>构建目录结构</li></ul><div class="language- extra-class"><pre class="language-text"><code>+--docs
+|  |+--blogs
+|  |  |+--webpack
+|  |  |  |+--webpack-install.md
+|  |  |  |+--README.md    
+|  |  |+--VuePress
+|  |  |  |+--README.md
+|  |+--README.md
+</code></pre></div><ul><li>运行</li></ul><div class="language-bash extra-class"><pre class="language-bash"><code>vuepress dev docs 
+</code></pre></div><p>6.部署到github</p><ul><li><p>创建git仓库为&lt;username.github.io&gt;配置可参考github page相关内容</p></li><li><p>创建自动化部署deploy.sh脚本</p></li></ul><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 终止一个错误</span>
+<span class="token keyword">set</span> -e
+
+<span class="token comment"># 构建</span>
+<span class="token comment">#npm run docs:build</span>
+vuepress build docs
+
+<span class="token comment"># 进入生成的构建文件夹</span>
+<span class="token function">cd</span> docs/.vuepress/dist
+
+<span class="token comment"># 如果你是要部署到自定义域名</span>
+<span class="token comment"># echo 'www.example.com' &gt; CNAME</span>
+
+<span class="token function">git</span> init
+<span class="token function">git</span> add -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果你想要部署到 https://&lt;USERNAME&gt;.github.io</span>
+<span class="token comment"># git push -f git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git master</span>
+<span class="token function">git</span> push -f git@github.com:liuyongchao/liuyongchao.github.io.git master
+<span class="token comment"># 如果你想要部署到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;</span>
+<span class="token comment"># git push -f git@github.com:&lt;USERNAME&gt;/&lt;REPO&gt;.git master:gh-pages</span>
+
+<span class="token function">cd</span> -
+</code></pre></div><ul><li><p>在docs同级目录下运行deploy.sh脚本</p></li><li><p><a href="https://liuyongchao.github.io" target="_blank" rel="noopener noreferrer">试着打开https://liuyongchao.github.io浏览博客吧<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/blogs/webpack/webpack-install.html" class="prev">
+          Webpack2.0应用
+        </a></span><span class="next"><a href="/blogs/JavaScript/">
+          JavaScript
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/5.48ed9441.js" defer></script><script src="/assets/js/app.ef863600.js" defer></script>
+  </body>
+</html>
